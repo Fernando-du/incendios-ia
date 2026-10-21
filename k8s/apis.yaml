@@ -1,0 +1,77 @@
+# ==========================================
+# 1. API DATOS
+# ==========================================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-datos-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-datos
+  template:
+    metadata:
+      labels:
+        app: api-datos
+    spec:
+      containers:
+      - name: api-datos
+        image: incendios-ia-api-datos:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+        env:
+        - name: DATABASE_URL
+          value: "postgresql://postgres:postgres@db:5432/incendios"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-datos
+spec:
+  selector:
+    app: api-datos
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+
+---
+# ==========================================
+# 2. API RIESGO (Modelo IA)
+# ==========================================
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-riesgo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-riesgo
+  template:
+    metadata:
+      labels:
+        app: api-riesgo
+    spec:
+      containers:
+      - name: api-riesgo
+        image: incendios-ia-api-riesgo:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8001
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-riesgo
+spec:
+  selector:
+    app: api-riesgo
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 8001
