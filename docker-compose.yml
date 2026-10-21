@@ -1,0 +1,64 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: riesgo_incendios
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - red-incendios
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d riesgo_incendios"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api-riesgo:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    command: uvicorn src.main:app --host 0.0.0.0 --port 8000
+    networks:
+      - red-incendios
+    depends_on:
+      - db
+
+  api-datos:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    command: uvicorn src.data_service:app --host 0.0.0.0 --port 8001
+    environment:
+      # URL de conexión usando el nombre del servicio en Docker ("db")
+      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/riesgo_incendios
+    networks:
+      - red-incendios
+    depends_on:
+      db:
+        condition: service_healthy # Espera a que PostgreSQL esté listo
+
+  frontend-nginx:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" # Expone el puerto 80 al exterior
+    networks:
+      - red-incendios
+    depends_on:
+      - api-riesgo
+      - api-datos
+
+networks:
+  red-incendios:
+    driver: bridge
+
+volumes:
+  pgdata:
