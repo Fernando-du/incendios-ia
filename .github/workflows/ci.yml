@@ -24,11 +24,11 @@ jobs:
       - name: Construir imágenes Docker
         run: |
           echo "Construyendo contenedores..."
-          docker-compose build
+          docker compose build
 
       - name: Verificar ejecución
         run: |
-          docker-compose up -d
+          docker compose up -d
           sleep 10
-          docker-compose ps
-          docker-compose down
+          docker compose ps
+          docker compose down
