@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function DashboardPredictor({ zonaSeleccionada }) {
+  const [estacionesReales, setEstacionesReales] = useState([]);
+  const [estacionActiva, setEstacionActiva] = useState("");
+
   const [datos, setDatos] = useState({
     temperatura: 30,
     humedad: 40,
@@ -13,6 +16,41 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
   const [cargando, setCargando] = useState(false);
   const [error, setError] = useState(null);
 
+  // 1. Cargar observaciones reales desde PostgreSQL al iniciar el dashboard
+  useEffect(() => {
+    const cargarEstaciones = async () => {
+      try {
+        const res = await fetch("/api/v1/observaciones/ultimas");
+        if (res.ok) {
+          const lista = await res.json();
+          setEstacionesReales(lista);
+        }
+      } catch (err) {
+        console.error("No se pudieron cargar estaciones desde PostgreSQL:", err);
+      }
+    };
+    cargarEstaciones();
+  }, []);
+
+  // 2. Autocompletar variables reales al seleccionar una estación de la BD
+  const seleccionarEstacionReal = (e) => {
+    const nombreZona = e.target.value;
+    setEstacionActiva(nombreZona);
+    setResultado(null);
+    setError(null);
+
+    const encontrada = estacionesReales.find((item) => item.zona === nombreZona);
+    if (encontrada) {
+      setDatos({
+        temperatura: encontrada.temperatura,
+        humedad: encontrada.humedad,
+        viento: encontrada.viento,
+        vegetacion: encontrada.vegetacion,
+        incendios_historicos: encontrada.incendios_historicos,
+      });
+    }
+  };
+
   const manejarCambio = (e) => {
     setDatos({
       ...datos,
@@ -20,9 +58,12 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
     });
   };
 
+  // Usar la estación real elegida o el punto marcado en el mapa
+  const zonaFinal = estacionActiva || zonaSeleccionada;
+
   const evaluarRiesgo = async () => {
-    if (!zonaSeleccionada) {
-      setError("Por favor, selecciona una zona en el mapa primero.");
+    if (!zonaFinal) {
+      setError("Selecciona una estación real de la lista o haz clic en el mapa.");
       return;
     }
 
@@ -31,12 +72,11 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
     setResultado(null);
 
     try {
-      // Nginx redirigirá esta ruta al contenedor api-riesgo
       const respuesta = await fetch("/api/v1/riesgo", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          zona: zonaSeleccionada,
+          zona: zonaFinal,
           ...datos,
         }),
       });
@@ -65,9 +105,39 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
       }}
     >
       <h3>Dashboard Predictivo</h3>
+
+      {/* Selector de Estaciones Reales (EMAS + CONAF desde PostgreSQL) */}
+      <div style={{ marginBottom: "15px" }}>
+        <label style={{ display: "block", fontWeight: "bold", marginBottom: "5px" }}>
+          Cargar Datos Reales (Estaciones EMAS / CONAF):
+        </label>
+        <select
+          value={estacionActiva}
+          onChange={seleccionarEstacionReal}
+          style={{
+            width: "100%",
+            padding: "8px",
+            borderRadius: "4px",
+            border: "1px solid #ccc",
+            backgroundColor: "white",
+          }}
+        >
+          <option value="">
+            {estacionesReales.length > 0
+              ? "-- Selecciona una estación con datos reales --"
+              : "-- Sin datos en BD (sube dataset_real_unificado.csv primero) --"}
+          </option>
+          {estacionesReales.map((est, idx) => (
+            <option key={idx} value={est.zona}>
+              {est.zona} (Temp: {est.temperatura}°C | Hum: {est.humedad}%)
+            </option>
+          ))}
+        </select>
+      </div>
+
       <p>
-        <strong>Zona Actual:</strong>{" "}
-        {zonaSeleccionada || "Ninguna (clic en el mapa)"}
+        <strong>Zona a Evaluar:</strong>{" "}
+        {zonaFinal || "Ninguna (elige estación o clic en mapa)"}
       </p>
 
       <div
@@ -155,7 +225,13 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
             padding: "15px",
             backgroundColor: "white",
             borderRadius: "4px",
-            borderLeft: `5px solid ${resultado.riesgo === "ALTO" ? "red" : resultado.riesgo === "MEDIO" ? "orange" : "green"}`,
+            borderLeft: `5px solid ${
+              resultado.riesgo === "ALTO"
+                ? "red"
+                : resultado.riesgo === "MEDIO"
+                ? "orange"
+                : "green"
+            }`,
           }}
         >
           <h4 style={{ margin: "0 0 10px 0" }}>
@@ -165,11 +241,11 @@ export default function DashboardPredictor({ zonaSeleccionada }) {
             <strong>Probabilidades:</strong>
           </p>
           <ul style={{ margin: "5px 0 15px 0", paddingLeft: "20px" }}>
-            <li>BAJO: {(resultado.probabilidades.BAJO * 100).toFixed(1)}%</li>
-            <li>MEDIO: {(resultado.probabilidades.MEDIO * 100).toFixed(1)}%</li>
-            <li>ALTO: {(resultado.probabilidades.ALTO * 100).toFixed(1)}%</li>
+            <li>BAJO: {((resultado.probabilidades.BAJO || 0) * 100).toFixed(1)}%</li>
+            <li>MEDIO: {((resultado.probabilidades.MEDIO || 0) * 100).toFixed(1)}%</li>
+            <li>ALTO: {((resultado.probabilidades.ALTO || 0) * 100).toFixed(1)}%</li>
           </ul>
-          <small style={{ color: "#666" }}>{resultado.advertencia}</small>
+          <small style={{ color: "#666" }}>Modelo: {resultado.modelo}</small>
         </div>
       )}
     </div>

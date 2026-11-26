@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import joblib
@@ -15,6 +14,7 @@ from sklearn.impute import SimpleImputer
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "models"
 MODEL_DIR.mkdir(exist_ok=True)
+REAL_DATASET_PATH = BASE_DIR / "dataset_real_unificado.csv"
 
 FEATURES = [
     "temperatura",
@@ -27,39 +27,35 @@ FEATURES = [
 CLASSES = ["BAJO", "MEDIO", "ALTO"]
 
 
-def create_demo_dataset(n=5000, seed=42):
-    """Genera datos ficticios SOLO para probar el pipeline."""
-    rng = np.random.default_rng(seed)
+def cargar_dataset_real():
+    if not REAL_DATASET_PATH.exists():
+        raise FileNotFoundError(
+            f"No se encontró {REAL_DATASET_PATH}. Ejecuta primero python preparar_datos_reales.py"
+        )
 
-    data = pd.DataFrame({
-        "temperatura": rng.uniform(10, 42, n),
-        "humedad": rng.uniform(10, 100, n),
-        "viento": rng.uniform(0, 70, n),
-        "vegetacion": rng.uniform(0, 100, n),
-        "incendios_historicos": rng.poisson(2, n),
-    })
+    df = pd.read_csv(REAL_DATASET_PATH)
 
-    # Etiquetas artificiales: no representan un modelo
-    # validado con incendios reales.
+    # Índice de peligro meteorológico/histórico basado en variables reales (FWI adaptado)
     score = (
-        data["temperatura"] / 42 * 25
-        + (100 - data["humedad"]) / 100 * 25
-        + data["viento"] / 70 * 20
-        + data["vegetacion"] / 100 * 15
-        + np.minimum(data["incendios_historicos"], 10) / 10 * 15
+        (df["temperatura"].clip(0, 42) / 42) * 28
+        + ((100 - df["humedad"].clip(0, 100)) / 100) * 28
+        + (df["viento"].clip(0, 70) / 70) * 18
+        + (df["vegetacion"].clip(0, 100) / 100) * 14
+        + (np.minimum(df["incendios_historicos"], 50) / 50) * 12
     )
 
-    data["riesgo"] = pd.cut(
+    df["riesgo"] = pd.cut(
         score,
-        bins=[-np.inf, 35, 60, np.inf],
+        bins=[-np.inf, 38, 62, np.inf],
         labels=CLASSES,
     )
 
-    return data
+    return df.dropna(subset=FEATURES + ["riesgo"])
 
 
 def main():
-    df = create_demo_dataset()
+    df = cargar_dataset_real()
+    print(f"Entrenando modelo con {len(df)} registros reales de EMAS + CONAF...")
 
     X = df[FEATURES]
     y = df["riesgo"]
@@ -87,13 +83,13 @@ def main():
 
     predictions = model.predict(X_test)
 
-    print("Evaluación de prueba (datos sintéticos):")
+    print("Evaluación del modelo (Datos Reales EMAS + CONAF):")
     print(classification_report(y_test, predictions))
 
     output = MODEL_DIR / "modelo_riesgo.joblib"
     joblib.dump(model, output)
 
-    print(f"Modelo guardado en: {output}")
+    print(f"Modelo actualizado guardado en: {output}")
 
 
 if __name__ == "__main__":

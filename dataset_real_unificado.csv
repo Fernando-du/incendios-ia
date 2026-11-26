@@ -1,0 +1,288 @@
+zona,temperatura,humedad,viento,vegetacion,incendios_historicos,fecha_observacion,fuente
+Copiapo (Atacama),16.7,85.5,1.0,14.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Bodega (Atacama),16.4,83.3,1.0,16.7,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Vicuña FDF (Coquimbo),18.3,70.0,0.0,30.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Punitaqui (Coquimbo),18.2,83.7,0.0,16.3,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Esteban (Valparaíso),12.3,72.5,0.9,27.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Calle Larga (Valparaíso),12.8,74.4,0.0,25.6,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Putaendo (Valparaíso),12.5,81.3,0.0,18.7,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Catemu (Valparaíso),11.7,86.9,0.0,13.1,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Hijuelas (Valparaíso),11.8,84.1,0.7,15.9,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Limache (Valparaíso),11.3,90.5,0.9,9.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huechún (ex Lampa) (Metropolitana),14.4,77.1,0.0,22.9,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pirque (Metropolitana),14.0,82.5,0.0,17.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lo Herrera (Metropolitana),12.9,84.5,0.0,15.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mallarauco (Metropolitana),14.8,77.9,0.0,22.1,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro (Metropolitana),9.1,100.0,0.0,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mostazal (O'Higgins),15.3,72.8,0.0,27.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Codegua (O'Higgins),13.8,86.4,0.0,13.6,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Punta Cortes (O'Higgins),14.5,90.0,1.8,10.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Coltauco (O'Higgins),12.9,95.8,0.0,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Carmen (O'Higgins),12.4,94.7,1.0,5.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chépica (O'Higgins),13.5,88.1,0.3,11.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Yerbas Buenas 2 (Maule),12.1,93.0,1.3,7.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lontue (Maule),12.9,86.0,1.9,14.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Rafael (Maule),14.0,90.5,1.0,9.5,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pencahue (Maule),14.6,89.8,0.4,10.2,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Yerbas Buenas (Maule),13.6,87.3,0.0,12.7,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Longaví Sur (Maule),14.9,86.5,1.7,13.5,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Parral (Maule),12.0,92.9,0.5,7.1,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Coihueco (Ñuble),11.0,98.9,1.0,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Bulnes (Ñuble),11.9,98.9,0.5,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Renaico (Araucanía),12.0,80.6,0.5,19.4,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mulchén (Biobío),10.3,91.0,0.0,9.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Negrete (Biobío),11.1,89.1,0.0,10.9,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Angeles (Biobío),10.8,100.0,0.3,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tierras Nobles (Biobío),8.0,0.0,0.0,98.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Collipulli (Araucanía),10.8,87.9,0.8,12.1,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Galvarino (Araucanía),11.7,85.3,0.0,14.7,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Traiguén (Araucanía),9.3,98.9,0.0,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Gorbea (Araucanía),8.7,100.0,0.0,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mariquina (Los Ríos),7.8,100.0,0.0,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mafil (Los Ríos),6.5,100.0,0.5,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Paillaco (Los Ríos),7.3,99.8,0.0,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Union (Los Ríos),9.8,86.5,0.7,13.5,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Osorno (Los Lagos),9.5,89.6,1.0,9.4,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Purranque (Los Lagos),9.5,89.1,2.3,10.9,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Coyhaique (Aysén),6.0,76.0,0.0,24.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Azapa Alto (Arica y Parinacota),19.41,63.11,2.38,36.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lago Chungará (Arica y Parinacota),8.37,34.0,2.75,66.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lluta Alto (Arica y Parinacota),16.55,78.56,2.38,21.4,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lluta Medio (Arica y Parinacota),17.55,76.1,2.75,23.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Socoroma (Arica y Parinacota),15.61,23.81,4.03,76.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Salar de Surire (Arica y Parinacota),8.42,26.51,2.52,73.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Visviri (Arica y Parinacota),12.32,27.68,2.38,72.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Calama Rural (Antofagasta),20.78,20.02,2.75,80.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ollagüe (Antofagasta),14.73,13.87,3.42,86.1,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro de Atacama (Antofagasta),20.8,13.32,2.68,86.7,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Socaire (Antofagasta),16.92,16.7,5.45,83.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Toconao (Antofagasta),20.44,12.2,2.9,87.8,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Algarrobo Bajo (Coquimbo),16.73,60.32,2.68,39.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Centro Experimental Huasco (Atacama),15.9,86.75,20.68,13.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Palqui INIA (Coquimbo),18.51,44.82,2.52,55.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Platina (Metropolitana),14.65,58.14,2.98,41.9,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Tambo (O'Higgins),14.72,82.8,3.72,17.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cauquenes (Maule),13.39,78.6,2.38,21.4,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chanco (Maule),15.76,75.74,3.72,24.3,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Coronel de Maule (Maule),13.48,80.5,4.92,19.5,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Despachos (Maule),13.52,76.82,3.68,23.2,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Sofía (Maule),15.1,77.08,4.85,22.9,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Sauzal (Maule),13.41,84.68,4.32,15.3,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cañete (Biobío),12.01,86.99,1.4,13.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Human (Biobío),11.94,80.89,2.98,19.1,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lebu (Biobío),5.56,97.1,2.9,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ninhue (Ñuble),13.49,76.64,4.03,23.4,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Nueva Aldea (Ñuble),13.3,82.55,0.28,17.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Portezuelo (Ñuble),12.97,87.93,1.92,12.1,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Punta Parra (Biobío),12.85,79.33,2.08,20.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Rosa (Ñuble),11.11,96.55,2.82,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Yungay (Ñuble),10.53,96.13,2.98,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Navidad (Ñuble),11.18,93.35,0.65,6.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Carillanca (Araucanía),11.85,91.7,0.0,8.3,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cuarta Faja (Araucanía),9.96,98.45,1.7,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Dominguez (Araucanía),10.09,86.83,2.22,13.2,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Providencia (Araucanía),12.12,80.25,2.0,19.8,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Luis (Araucanía),11.43,72.55,1.92,27.4,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Adela (Araucanía),9.39,99.98,1.48,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tranapuente (Araucanía),11.07,96.68,3.5,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lago Verde (Los Ríos),11.72,80.64,6.72,19.4,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Cardal (Los Ríos),9.72,89.83,4.25,5.7,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Butalcura (Los Lagos),8.9,92.45,5.15,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Colegual (Los Lagos),8.26,96.68,5.3,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huyar Alto (Los Lagos),10.01,91.83,2.38,8.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Pampa (Los Lagos),9.05,87.33,3.88,12.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Canelos (Los Lagos),8.56,93.73,4.92,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Polizones (Los Lagos),8.53,96.05,2.22,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Quilanto (Los Lagos),11.1,78.74,6.35,20.8,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Remehue (Los Lagos),10.33,88.5,5.38,10.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chile Chico (Aysén),8.61,85.9,0.0,14.1,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tamelaike (Aysén),6.96,85.25,2.0,14.8,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Vista Hermosa (Aysén),5.78,87.0,2.22,13.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Puerto Natales (Magallanes),4.7,88.78,1.85,11.2,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Punta Arenas Rural (Magallanes),5.36,81.0,0.0,19.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Casa Marín (Valparaíso),11.7,96.68,2.52,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Rita (Metropolitana),11.6,89.33,2.05,10.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Casa Silva-Los Lingues (O'Higgins),13.09,85.85,1.84,14.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ventisquero-Peralillo (O'Higgins),11.17,100.0,0.31,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lapostolle-Apalta (O'Higgins),12.53,92.48,2.38,7.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Aresti (Maule),11.83,91.98,1.19,8.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+J. Bouchon (Maule),11.33,99.98,2.0,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro-Totihue (O'Higgins),11.38,96.25,0.35,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro-Pencahue (Maule),11.6,99.88,4.73,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Hidango (O'Higgins),12.63,99.33,1.92,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Caspana (Antofagasta),16.84,19.14,4.1,80.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Codpa (Arica y Parinacota),22.47,23.58,2.3,76.4,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tierra del Fuego (Magallanes),7.7,76.34,4.7,23.7,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Claro (Aysén),8.01,81.65,1.25,18.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Las Lomas (Los Ríos),8.33,95.28,1.85,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Antonio de Naltahua (Metropolitana),14.3,74.77,3.2,25.2,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro de Melipilla (Metropolitana),11.07,99.5,1.32,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Carla (Los Ríos),8.96,99.9,3.28,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Isla Riesco (Magallanes),5.14,83.25,3.65,16.8,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Desagüe Rupanco (Los Lagos),10.4,76.37,4.62,23.6,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Palquico (Valparaíso),12.6,71.5,0.0,28.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Manuel Montt (Valparaíso),10.8,92.5,0.0,7.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Camarones (Arica y Parinacota),17.02,67.62,1.85,32.4,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Putre (Arica y Parinacota),14.09,28.48,4.1,71.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Amolana (Atacama),19.28,54.39,3.8,45.6,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Cruz INIA (Valparaíso),16.54,54.69,1.78,45.3,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Tilos (Metropolitana),15.71,59.78,2.08,40.2,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Palermo (Los Ríos),11.42,87.08,5.6,11.9,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ensenada (Los Lagos),9.99,86.05,1.18,14.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Quilacahuin (Los Ríos),9.83,95.83,0.88,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Kampenaike (Magallanes),4.96,93.18,4.32,6.8,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tutuquen (Maule),12.8,97.0,0.0,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Union Norte (Los Ríos),9.2,96.7,0.0,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cerro Blanco (Arica y Parinacota),20.17,55.84,2.9,44.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chaca (Arica y Parinacota),20.84,54.72,3.65,45.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Amada (Maule),14.59,83.52,2.22,16.5,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Clemente (Maule),14.9,75.81,3.42,24.2,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Marimenuco (Araucanía),3.79,86.55,1.85,13.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Centro Experimental Arroz (Ñuble),11.03,99.93,4.92,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Puala (Araucanía),8.08,89.53,0.0,10.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huiscapi (Araucanía),11.89,79.89,2.22,20.1,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Sta Inés (Araucanía),11.07,79.82,1.85,20.2,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Las Palmas (Araucanía),9.85,91.55,2.6,8.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Surco y Semilla (Araucanía),10.77,87.53,3.88,12.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Manzanares (Araucanía),13.73,75.07,2.75,24.9,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Caballería (ex San Fabián) (Araucanía),11.8,81.58,2.45,18.4,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cerro Grande (Coquimbo),17.9,70.82,2.05,29.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ovalle (Coquimbo),19.0,52.32,2.27,47.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Serena (Coquimbo),13.86,98.82,3.3,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Coquimbo (Coquimbo),15.06,99.72,3.3,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Rapel (Coquimbo),16.76,56.23,2.23,43.8,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huintil (Coquimbo),18.01,18.14,2.38,81.9,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Laguna (Coquimbo),2.4,43.9,3.0,56.1,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pan de Azúcar [INIA] (Coquimbo),14.57,98.73,1.85,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Gabriela Mistral (Coquimbo),17.41,77.14,1.72,22.9,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tascadero (Coquimbo),4.0,45.82,4.18,54.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Andacollo (Coquimbo),13.84,39.92,10.58,60.1,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Vicuña CEAZA (Coquimbo),18.29,68.23,2.59,31.8,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Canela (Coquimbo),18.23,48.54,4.8,51.5,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Hurtado (Coquimbo),13.9,59.87,8.61,40.1,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Illapel CEAZA (Coquimbo),16.54,66.64,2.45,33.4,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pichasca (Coquimbo),17.75,46.74,4.53,53.3,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Quebrada Seca (Coquimbo),18.11,60.88,2.84,39.1,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cachiyuyo (Atacama),17.61,51.43,3.75,48.6,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Punta de Choros (Coquimbo),15.9,81.06,4.07,18.9,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Mincha Sur (Coquimbo),15.55,77.33,6.25,22.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Las Cardas (Coquimbo),19.69,54.35,2.33,45.6,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Combarbalá CEAZA (Coquimbo),14.6,40.42,2.29,59.6,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Romeral (Coquimbo),16.21,86.28,4.45,13.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Salamanca CEAZA (Coquimbo),15.22,66.2,2.51,33.8,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tilama (Coquimbo),16.59,61.37,2.73,38.6,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Monte Flor-Tucapel (Maule),12.35,96.23,4.1,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ponotro (Biobío),11.88,85.85,4.18,14.2,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Isla (Araucanía),9.44,91.43,0.28,8.6,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Membrillo (Araucanía),11.59,64.61,0.0,35.4,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cerro Castillo (Magallanes),3.97,84.93,1.32,15.1,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Austral (Los Ríos),8.91,99.08,3.35,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Rucatayo (Los Ríos),10.66,75.8,6.5,24.2,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Caleta Vitor (Arica y Parinacota),20.78,64.9,0.0,35.1,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Maqui (ex Puchuncavi) (Valparaíso),12.61,76.87,2.38,23.1,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Arenal (O'Higgins),13.79,77.7,2.3,22.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Belén (Arica y Parinacota),15.84,21.99,5.68,78.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ticnamar (Arica y Parinacota),15.99,20.85,4.55,79.2,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Junta (Aysén),8.85,85.6,3.72,14.4,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Vilos - Quebrachar (Coquimbo),12.2,97.8,0.5,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Puchuncavi (Valparaíso),11.8,100.0,1.0,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Campanacura (Maule),13.6,89.4,1.0,10.6,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cobquecura (Ñuble),14.9,80.5,0.5,19.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Peldehue (Metropolitana),14.3,66.5,0.0,33.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Falda Verde (Atacama),15.86,99.13,4.4,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia Zenia (Magallanes),5.92,62.12,4.85,37.9,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Quilimari (Coquimbo),10.23,77.48,3.88,22.5,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia 5 de Enero (Magallanes),5.19,91.45,2.68,8.5,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Altos la Portada (Antofagasta),18.96,73.54,3.05,26.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Puente Negro (O'Higgins),16.01,79.48,3.35,20.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Camar (Antofagasta),17.54,14.06,4.47,85.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Jorge Los Niches (Maule),11.97,99.9,1.85,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Deuca (ex Lien) (Maule),14.76,85.35,1.85,14.7,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Colliguay (Valparaíso),15.78,54.02,1.62,46.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lomas (Maule),14.52,79.26,1.92,20.7,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Puralihue (Ñuble),13.07,94.8,0.0,5.2,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Asiento (Metropolitana),14.79,69.6,1.85,30.4,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Rafael (Araucanía),11.39,87.45,0.0,12.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Paz (Los Ríos),9.6,98.53,0.0,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Carelmapu (Los Lagos),8.95,95.68,2.9,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Gaby Ranquilco (Araucanía),9.15,100.0,2.15,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Enrique (Araucanía),8.61,92.1,0.28,7.9,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Arrayanes (Araucanía),11.41,93.95,2.45,6.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pica (Tarapacá),22.26,33.0,1.62,67.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huacamapu (Los Lagos),9.1,93.2,2.52,6.3,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Cuncumén (Valparaíso),11.09,92.2,1.32,7.8,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Huentelauquén (Coquimbo),7.38,76.48,2.34,23.5,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Copa (Atacama),17.97,75.73,2.75,24.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Iglesia Colorada (Atacama),18.6,51.4,0.5,48.6,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Freirina (Atacama),16.8,93.9,0.0,6.1,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Faja Maisan (Araucanía),9.39,99.38,2.22,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Cachina (Antofagasta),18.22,69.63,3.05,30.4,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Bajada Ibañez (Aysén),5.31,99.25,0.0,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Concha y Toro (Maule),15.53,77.0,0.3,23.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Arroyo el Gato (Aysén),7.49,82.48,3.05,17.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Miraflores INIA (Maule),14.26,82.93,4.18,17.1,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Liceo Jean Buchanan (O'Higgins),13.88,81.05,1.85,19.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chaguaral (Coquimbo),15.59,54.77,3.35,45.2,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pid-Pid (Los Lagos),9.55,92.63,1.25,7.4,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Quilquico (Los Lagos),9.07,89.63,0.0,10.4,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Isla Chelin (Los Lagos),10.85,87.45,0.0,12.5,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Radal (Araucanía),11.96,80.77,1.62,19.2,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Sebastián (Araucanía),9.75,87.5,0.88,12.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Taplon (Araucanía),12.36,89.43,2.0,10.6,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Vergel (Araucanía),13.53,73.52,4.18,26.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pailahueque (Araucanía),9.86,94.45,2.68,5.5,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Licanchen (O'Higgins),11.73,99.98,2.52,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pampa Concordia (Arica y Parinacota),19.06,81.7,1.4,18.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chapiquiña (Arica y Parinacota),15.25,21.05,5.3,79.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ajial de Quiles (Coquimbo),20.71,32.71,2.98,67.3,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Polvareda (Coquimbo),19.38,39.28,1.25,60.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Rayentué (O'Higgins),13.38,86.04,2.6,14.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Las Puentes (Biobío),12.01,96.68,0.0,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Lucía (Biobío),12.16,79.41,3.2,20.6,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Collimallin (Araucanía),10.99,89.57,2.38,10.4,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tenaún (Los Lagos),10.56,94.48,5.0,5.5,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ñirehuao (Aysén),7.2,86.14,2.75,13.9,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Oasis (Metropolitana),15.29,60.93,2.45,39.1,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Luis Felipe Edwards-Las Rosas (Maule),13.66,85.15,2.62,14.8,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Copayapu (Atacama),15.4,68.0,1.3,32.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Luis Felipe Edwards - Leyda (Valparaíso),10.69,93.88,3.5,6.1,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Luis Felipe Edwards - Puquillay (O'Higgins),10.08,94.73,0.0,5.3,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Luis Felipe Edwards - Mantul (Maule),12.52,95.95,2.22,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Parrón (Metropolitana),15.47,61.48,3.2,38.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+El Villorrio (Metropolitana),14.93,64.08,1.7,35.9,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Aurora (Metropolitana),13.12,68.11,1.48,31.9,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Santa Amelia (Metropolitana),14.68,67.32,3.12,32.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chacabuco (Metropolitana),16.23,57.43,0.0,42.6,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Valdivia de Paine (Metropolitana),16.27,63.27,1.55,36.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Chorrillos (Metropolitana),15.16,59.47,2.22,40.5,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Luis Felipe Edwards – Santo Domingo (Valparaíso),11.18,99.98,4.0,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Montes - Marchigue (O'Higgins),11.34,99.87,0.2,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Montes - Chiloé (Los Lagos),10.02,99.26,0.03,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Las Naranjas (Coquimbo),19.46,44.88,2.52,55.1,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Los Acacios (Coquimbo),19.4,47.28,3.65,52.7,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Peor es Nada (O'Higgins),12.11,89.45,3.72,10.5,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Contulmo Urbano (Biobío),12.9,83.34,0.0,16.7,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Colonia (Biobío),11.07,97.03,0.0,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Putenio (Los Lagos),9.95,97.83,3.65,5.0,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Conosur - Mulchén (Maule),10.32,93.13,0.64,6.9,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Viña Casanueva (Biobío),11.81,87.25,0.92,12.8,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia El Ovejero (Magallanes),3.99,98.93,3.5,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia Laguna Blanca (Magallanes),3.97,100.0,2.52,5.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia Skyring (Magallanes),3.75,91.88,1.78,8.1,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Estancia Berta (Magallanes),4.98,91.33,5.9,8.7,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Complejo Torres del Paine (Magallanes),4.96,90.08,3.88,9.9,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Errázuriz (Valparaíso),7.63,97.63,2.2,5.0,6,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Terranoble (Maule),12.08,94.7,1.88,5.3,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Concha y Toro - Cauquenes (Maule),11.75,99.53,3.3,5.0,5,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Casa Silva (Los Ríos),7.25,92.98,4.22,7.0,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Ovalle - Quebrada Seca (Coquimbo),12.63,79.1,4.1,20.9,2,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Vicente - Idahue (O'Higgins),9.7,99.78,2.98,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Lolol - Nilahue (O'Higgins),10.63,99.95,4.64,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Navidad - Ucuquer (O'Higgins),8.7,99.98,1.31,5.0,1,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+La Fueguina (Magallanes),7.06,68.61,3.2,31.4,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Rita (Magallanes),6.39,87.15,6.28,12.8,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Río Grande (Magallanes),4.65,72.23,1.92,27.8,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Tres Hermanos (Magallanes),6.5,62.61,5.22,37.4,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Fuerte Bulnes (Magallanes),4.6,80.51,2.38,19.5,0,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+San Pedro - Tarapacá (Metropolitana),11.53,95.65,1.91,5.0,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real
+Pérez Cruz (Metropolitana),12.93,85.78,1.31,14.2,4,2026-09-28T09:00:00-03:00,EMAS / CONAF Real

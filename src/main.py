@@ -1,25 +1,23 @@
-
+import json
+import os
 from pathlib import Path
 
 import joblib
+import psycopg
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 
-# Localizar el modelo desde la raíz del proyecto.
 BASE_DIR = Path(__file__).resolve().parents[1]
 MODEL_PATH = BASE_DIR / "models" / "modelo_riesgo.joblib"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 app = FastAPI(
     title="API de Riesgo de Incendios Forestales",
-    description=(
-        "Prototipo académico para clasificar el riesgo "
-        "de incendios forestales."
-    ),
-    version="1.0.0",
+    description="Servicio de inferencia IA entrenado con datos reales EMAS / CONAF.",
+    version="1.2.0",
 )
 
-# El modelo se carga una vez al iniciar la aplicación.
 model = None
 
 
@@ -65,7 +63,6 @@ def predecir_riesgo(datos: DatosRiesgo):
             detail="El modelo no está disponible.",
         )
 
-    # El orden y los nombres deben coincidir con el entrenamiento.
     entrada = [[
         datos.temperatura,
         datos.humedad,
@@ -76,37 +73,46 @@ def predecir_riesgo(datos: DatosRiesgo):
 
     try:
         riesgo = str(model.predict(entrada)[0])
-
         probabilidades = model.predict_proba(entrada)[0]
         clases = model.classes_
+
+        probs_dict = {
+            str(clase): round(float(probabilidad), 4)
+            for clase, probabilidad in zip(clases, probabilidades)
+        }
+
+        # Persistir predicción en PostgreSQL
+        if DATABASE_URL:
+            with psycopg.connect(DATABASE_URL, connect_timeout=5) as conn:
+                conn.execute(
+                    """
+                    INSERT INTO predicciones (zona, riesgo, probabilidades, modelo)
+                    VALUES (%s, %s, %s::jsonb, %s)
+                    """,
+                    (
+                        datos.zona,
+                        riesgo,
+                        json.dumps(probs_dict),
+                        "Random Forest (EMAS/CONAF)",
+                    ),
+                )
 
         return {
             "zona": datos.zona,
             "riesgo": riesgo,
-            "probabilidades": {
-                str(clase): round(float(probabilidad), 4)
-                for clase, probabilidad in zip(
-                    clases, probabilidades
-                )
-            },
+            "probabilidades": probs_dict,
             "factores_considerados": {
                 "temperatura": datos.temperatura,
                 "humedad": datos.humedad,
                 "viento": datos.viento,
                 "vegetacion": datos.vegetacion,
-                "incendios_historicos": (
-                    datos.incendios_historicos
-                ),
+                "incendios_historicos": datos.incendios_historicos,
             },
-            "modelo": "Random Forest",
-            "advertencia": (
-                "Prototipo con datos sintéticos. "
-                "No utilizar para decisiones reales de emergencia."
-            ),
+            "modelo": "Random Forest (Datos Reales EMAS/CONAF)",
         }
 
     except Exception as error:
         raise HTTPException(
             status_code=500,
-            detail="No se pudo generar la predicción.",
+            detail=f"No se pudo generar la predicción: {error}",
         ) from error

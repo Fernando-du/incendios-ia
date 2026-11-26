@@ -25,10 +25,13 @@ services:
       context: .
       dockerfile: Dockerfile.api
     command: uvicorn src.main:app --host 0.0.0.0 --port 8000
+    environment:
+      - DATABASE_URL=postgresql://admin:adminpassword@db:5432/riesgo_incendios
     networks:
       - red-incendios
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   api-datos:
     build:
@@ -36,20 +39,19 @@ services:
       dockerfile: Dockerfile.api
     command: uvicorn src.data_service:app --host 0.0.0.0 --port 8001
     environment:
-      # URL de conexión usando el nombre del servicio en Docker ("db")
       - DATABASE_URL=postgresql://admin:adminpassword@db:5432/riesgo_incendios
     networks:
       - red-incendios
     depends_on:
       db:
-        condition: service_healthy # Espera a que PostgreSQL esté listo
+        condition: service_healthy
 
   frontend-nginx:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "80:80" # Expone el puerto 80 al exterior
+      - "80:80"
     networks:
       - red-incendios
     depends_on:

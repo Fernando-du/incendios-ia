@@ -474,3 +474,44 @@ async def cargar_csv(archivo: UploadFile = File(...)):
             "correctamente en PostgreSQL."
         ),
     }
+@app.get("/api/v1/observaciones/ultimas")
+def obtener_ultimas_observaciones():
+    if not DATABASE_URL:
+        raise HTTPException(status_code=503, detail="DATABASE_URL no configurada.")
+
+    try:
+        with psycopg.connect(DATABASE_URL, connect_timeout=5) as conn:
+            filas = conn.execute(
+                """
+                SELECT DISTINCT ON (zona)
+                    zona,
+                    temperatura,
+                    humedad,
+                    viento,
+                    vegetacion,
+                    incendios_historicos,
+                    fecha_observacion,
+                    fuente
+                FROM observaciones
+                ORDER BY zona, fecha_observacion DESC
+                """
+            ).fetchall()
+
+        return [
+            {
+                "zona": f[0],
+                "temperatura": f[1],
+                "humedad": f[2],
+                "viento": f[3],
+                "vegetacion": f[4],
+                "incendios_historicos": f[5],
+                "fecha_observacion": f[6].isoformat() if f[6] else None,
+                "fuente": f[7],
+            }
+            for f in filas
+        ]
+    except psycopg.Error as error:
+        raise HTTPException(
+            status_code=503,
+            detail="Error al consultar observaciones en PostgreSQL.",
+        ) from error
